@@ -1,6 +1,7 @@
 <!DOCTYPE html>
   <html>
     <head>
+      <link type="text/css" rel="stylesheet" href="style.css">
       <title>Not Really Google</title>
     </head>
     <body>
@@ -11,11 +12,15 @@
             <input id="search" name="search" type="text" value="A simple search">
           </form>
           <img id="search-img" src="http://www.elitemediagraphics.com/images/search-engine-img.png">
+          <div class="signin">
+            <img id="apps" src="https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2Fflatfrogblog.com%2Fwp-content%2Fuploads%2F2014%2F01%2Fapp-launcher-150x150.png&container=blogger&gadget=a&rewriteMime=image%2F*" alt="Google apps">
+            <li id="signin">Sign In</li>
+          </div>
         </div>
         <div class="leftnav">
           <ul class="navlist">
-            <li class="active">
-              <a href="#">All</a>
+            <li>
+              <a id="active" href="#">All</a>
             </li>
             <li>
               <a href="#">Videos</a>
@@ -44,61 +49,57 @@
             </li>
           </ul>
         </div>
-        <div class="signin">
-          <img src="https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2Fflatfrogblog.com%2Fwp-content%2Fuploads%2F2014%2F01%2Fapp-launcher-150x150.png&container=blogger&gadget=a&rewriteMime=image%2F*" alt="Google apps">
-          <ul id="signin"><li>Sign In</li></ul>
-        </div>
       </div>
-      <div>
+      <div class="main">
         <p id="resultcount">About way more results then you need (0.0000001 seconds)</p>
         <ul class="results">
           <li>
-            <a href="#">The First Result</a>
+            <a class="title" href="#">The First Result</a>
             <p class="url">http://www.first-result.com</p>
             <p class="summary">This is the first result you will look at. It is most likely the only result you even want.</p>
           </li>
           <li>
-            <a href="#">2Fast2Result</a>
+            <a class="title" href="#">2Fast2Result</a>
             <p class="url">http://www.2fast2result.org</p>
             <p class="summary">This result is the second one. It has to be really quick to be second. All the other results wish they were second.</p>
           </li>
           <li>
-            <a href="#">Result 3: Return of the Results</a>
+            <a class="title" href="#">Result 3: Return of the Results</a>
             <p class="url">http://www.ReturnOfTheResult.ca</p>
             <p class="summary">There are many results like this one yet differnt. Something about this result is special.</p>
           </li>
           <li>
-            <a href="#">Result Four Tune</a>
+            <a class="title" href="#">Result Four Tune</a>
             <p class="url">http://www.Fourtune.com</p>
             <p class="summary">This result foreshadows the low quality of results lower in the page. You have been warned.</p>
           </li>
           <li>
-            <a href="#">500 Days of Results | Fox Searchlight</a>
+            <a class="title" href="#">500 Days of Results | Fox Searchlight</a>
             <p class="url">http://www.foxsearchlight.com/500daysofresults</p>
-            <p class="summary">Boy meets result. Boy falls in love. Result doesn't. This post modern love story is never what we expect it to be — it's thorny yet exhilarating, funny and sad, a twisted ...</p>
+            <p class="summary">Boy meets result. Boy falls in love. Result doesn't. This post modern love story is never what we expect it to be - it's thorny yet exhilarating, funny and sad, a twisted ...</p>
           </li>
           <li>
-            <a href="#">The Sixth Result (1999) -IMDB</a>
+            <a class="title" href="#">The Sixth Result (1999) -IMDB</a>
             <p class="url">http://www.imdb.com/title/tt0167404/</p>
-            <p class="summary"><strong>The Sixth Result</strong> (1999) PG-13 | 1h 47min | Drama, Mystery, Thriller | 6 August 1999 (USA) A boy who communicates with search engines that don't know they're broken seeks the help of a disheartened child psychologist.</p>
+            <p class="summary">The Sixth Result (1999) PG-13 | 1h 47min | Drama, Mystery, Thriller | 6 August 1999 (USA) A boy who communicates with search engines that don't know they're broken seeks the help of a disheartened child psychologist.</p>
           </li>
           <li>
-            <a href="#">Lucky Result Number Sleven</a>
+            <a class="title" href="#">Lucky Result Number Sleven</a>
             <p class="url">http://www.whatsinthebox.com</p>
             <p class="summary">This result is the seventh one and also a movie reference. Whats in the box? Tell me thats not true. Whats in the Box? Spoiler: its a result.</p>
           </li>
           <li>
-            <a href="#">The Hateful Eight Results (2015) -IMDB</a>
+            <a class="title" href="#">The Hateful Eight Results (2015) -IMDB</a>
             <p class="url">http://www.imdb.com/title/tt3460252/</p>
-            <p class="summary">Crime · In the dead of a Wyoming winter, a searcher and his result find shelter in a search engine currently inhabited by a collection of nefarious websites.</p>
+            <p class="summary">Crime - In the dead of a Wyoming winter, a searcher and his result find shelter in a search engine currently inhabited by a collection of nefarious websites.</p>
           </li>
           <li>
-            <a href="#">Result K-9</a>
+            <a class="title" href="#">Result K-9</a>
             <p class="url">http://www.k9.com</p>
             <p class="summary">You would think this result would be like the others and be some kind of pun or movie reference. Its actually about dogs and not even remotely related to your search.</p>
           </li>
           <li>
-            <a href="#">Top 10 Results | Clickbait</a>
+            <a class="title" href="#">Top 10 Results | Clickbait</a>
             <p class="url">http://www.pleaseclickthis.com</p>
             <p class="summary">You should see our website. We have lots of really generic top 10 lists covering almost any topic. This one is about search engine results!!!!!@@!@#!!!!</p>
           </li>
@@ -128,63 +129,73 @@
       <table id="pages">
         <tr>
           <td>
-            <span style="background:url(https://www.google.ca/images/nav_logo242.png) no-repeat;background-position:-24px 0;width:28px">
-            </span>
+            <img src="images/g.png">
+          </td>
+          <td rowspan="2">
+            <a href="#">
+              <img src="images/o1.png">
+              <p>1</p>
+            </a>
+          </td>
+          <td rowspan="2">
+            <a href="#">
+              <img src="images/o2.png">
+              <p>2</p>
+            </a>
+          </td>
+          <td rowspan="2">
+            <a href="#">
+              <img src="images/o2.png">
+              <p>3</p>
+            </a>
+          </td>
+          <td rowspan="2">
+            <a href="#">
+              <img src="images/o2.png">
+              <p>4</p>
+            </a>
+          </td>
+          <td rowspan="2">
+            <a href="#">
+              <img src="images/o2.png">
+              <p>5</p>
+            </a>
+          </td>
+          <td rowspan="2">
+            <a href="#">
+              <img src="images/o2.png">
+              <p>6</p>
+            </a>
+          </td>
+          <td rowspan="2">
+            <a href="#">
+              <img src="images/o2.png">
+              <p>7</p>
+            </a>
+          </td>
+          <td rowspan="2">
+            <a href="#">
+              <img src="images/o2.png">
+              <p>8</p>
+            </a>
+          </td>
+          <td rowspan="2">
+            <a href="#">
+              <img src="images/o2.png">
+              <p>9</p>
+            </a>
+          </td>
+          <td rowspan="2">
+            <a href="#">
+              <img src="images/o2.png">
+              <p>10</p>
+            </a>
           </td>
           <td>
-            <span style="background: url(https://www.google.ca/images/nav_logo242.png)no-repeat;background-position:-53px 0;width:20px">
-            </span>
-            <a href="#">1</a>
-          </td>
-          <td>
-            <span style="background: url(https://www.google.ca/images/nav_logo242.png)no-repeat;background-position:-74px 0;width:20px">
-            </span>
-            <a href="#">2</a>
-          </td>
-          <td>
-            <span style="background: url(https://www.google.ca/images/nav_logo242.png)no-repeat;background-position:-74px 0;width:20px">
-            </span>
-            <a href="#">3</a>
-          </td>
-          <td>
-            <span style="background: url(https://www.google.ca/images/nav_logo242.png)no-repeat;background-position:-74px 0;width:20px">
-            </span>
-            <a href="#">4</a>
-          </td>
-          <td>
-            <span style="background: url(https://www.google.ca/images/nav_logo242.png)no-repeat;background-position:-74px 0;width:20px">
-            </span>
-            <a href="#">5</a>
-          </td>
-          <td>
-            <span style="background: url(https://www.google.ca/images/nav_logo242.png)no-repeat;background-position:-74px 0;width:20px">
-            </span>
-            <a href="#">6</a>
-          </td>
-          <td>
-            <span style="background: url(https://www.google.ca/images/nav_logo242.png)no-repeat;background-position:-74px 0;width:20px">
-            </span>
-            <a href="#">7</a>
-          </td>
-          <td>
-            <span style="background: url(https://www.google.ca/images/nav_logo242.png)no-repeat;background-position:-74px 0;width:20px">
-            </span>
-            <a href="#">8</a>
-          </td>
-          <td>
-            <span style="background: url(https://www.google.ca/images/nav_logo242.png)no-repeat;background-position:-74px 0;width:20px">
-            </span>
-            <a href="#">9</a>
-          </td>
-          <td>
-            <span style="background: url(https://www.google.ca/images/nav_logo242.png)no-repeat;background-position:-74px 0;width:20px">
-            </span>
-            <a href="#">10</a>
-          </td>
-          <td>
-            <span style="background: url(https://www.google.ca/images/nav_logo242.png)no-repeat;background-position:-96px 0;width:71px">
-            </span>
-            <a href="#">Next</a>
+            <a href="#">
+              <img src="images/gle2.png">
+              <p>Next</p>
+            </a>
           </td>
         </tr>
       </table>

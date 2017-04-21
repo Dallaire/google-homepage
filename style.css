@@ -1,0 +1,224 @@
+html, body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  border-bottom: 1px solid gray;
+  display: inline-block;
+}
+
+li {
+  display: block;
+  float: left;
+  padding: 10px 10px;
+}
+
+#logo {
+  margin: 15px;
+  padding: 0;
+  height: 50px;
+  width: 120px;
+  float: left;
+}
+
+.searchbar {
+  margin: 0;
+  overflow: hidden; 
+}
+
+#search {
+  float: left;
+  height: 40px;
+  width: 500px;
+  margin: 15px;
+  margin-right: 0px;
+  padding: 0px;
+  padding-left: 10px;
+  border-radius: 0px;
+  display: inline-block;
+  border: 1px solid grey;
+  box-shadow: 1px 1px 1px;
+}
+
+#search-img {
+  height: 40px;
+  width: 40px;
+  padding: 15px;
+  padding-left: 0px;
+}
+
+.signin {
+  display: inline-block;
+  float: right;
+  margin: 10px;
+  padding 10px;
+}
+
+
+#apps {
+  height: 35px;
+  width: 35px;
+  padding: 10px;
+  margin-right: 10px; 
+  vertical-align: baseline;
+  display: inline-block;
+  float: left;
+}
+
+#signin {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  height: 35px;
+  width: 55px;
+  padding: 10px 5px 0px 5px;
+  margin: 5px;
+  display: inline-block;
+  vertical-align: baseline; 
+}
+
+#signin:hover {
+  text-decoration: underline white;
+}
+
+.leftnav{
+  float: left;
+}
+
+.rightnav {
+  float: right;
+  margin-right: 20%;
+}
+
+.navlist {
+  list-style: none;
+  display: inline;
+  margin: 10px;
+}
+
+.navlist a:hover {
+  text-decoration: underline gray;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+#active {
+  color: blue;
+  border-bottom: 2px solid blue;
+}
+
+.main {
+  float: left;
+  padding-left: 100px;
+  padding-right: 500px;
+}
+
+#resultcount {
+  font-size: small;
+  color: #666;
+  margin-left: 50px;
+}
+
+.title {
+  font-size: 22px;
+  color: blue;
+}
+
+.title:hover {
+  text-decoration: underline blue;
+}
+
+.url {
+  font-size: small;
+  padding: 0px;
+  margin: 0px;
+  color: green;
+}
+
+.url:hover {
+  text-decoration: underline green;
+}
+
+.summary {
+  padding: 0px;
+  margin: 5px 0px;
+}
+
+#pages {
+  margin-left: 30%
+}
+
+#pages a {
+  color: darkcyan;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#pages a:hover {
+  text-decoration: underline darkblue;
+}
+
+#pages p {
+  margin: 0;
+  padding: 0;
+}
+
+#pages img {
+  margin: 0;
+  padding: 0px;
+}
+
+#g {
+  padding-bottom: 16px;
+}
+
+#related {
+  margin-left: 10%;
+  padding: 20px; 
+}
+
+#related thead {
+  font-size: 20px;
+}
+
+#related tr td a {
+  color: blue;
+}
+
+#related tr td a:hover {
+  text-decoration: underline blue;
+}
+
+footer {
+  background-color: lightgray;
+  border-top: 1px solid gray;
+  height: 100px;
+  margin-top: 20px;
+}
+
+#location {
+  font-size: small;
+  color: gray;
+  padding-left: 10%;
+}
+
+#location a:hover {
+  color: black;
+}
+
+.help {
+  padding-left: 10%;
+}
+
+.help a {
+  padding-left: 15px;
+  color: #666;
+}
+
+.help :hover {
+  color: black;
+}
